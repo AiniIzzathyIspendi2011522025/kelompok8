@@ -4,89 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailLogbook">
+    android:background="#FFFFFF"
+    tools:context=".ListPengajuanKP">
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/textView36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="serif"
-        android:text="LogBook"
-        android:textColor="#000000"
+        android:text="Pengajuan KP"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout4"
+        android:id="@+id/constraintLayout"
         android:layout_width="360dp"
-        android:layout_height="525dp"
-        android:layout_marginTop="28dp"
+        android:layout_height="465dp"
+        android:layout_marginTop="36dp"
         android:background="#F2FBEE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10">
+        app:layout_constraintTop_toBottomOf="@+id/textView36">
 
         <TextView
-            android:id="@+id/textView11"
-            android:layout_width="290dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="88dp"
-            android:text="Tanggal"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="List Pengajuan KP"
+            android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.228"
+            app:layout_constraintHorizontal_bias="0.06"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="290dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="16dp"
-            android:text="Judul"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.228"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="290dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="16dp"
-            android:text="Detail Kegiatan"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.228"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
         <Button
-            android:id="@+id/button7"
-            android:layout_width="115dp"
-            android:layout_height="55dp"
+            android:id="@+id/button10"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/button1"
-            android:text="Edit"
+            android:text="Tambah"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.987"
+            app:layout_constraintHorizontal_bias="0.94"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="71dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         app:srcCompat="@drawable/buttombar" />
 
     <ImageView
@@ -110,4 +92,5 @@
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
         app:srcCompat="@drawable/profill" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
