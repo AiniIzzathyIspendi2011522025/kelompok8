@@ -20,4 +20,9 @@ class TambahLogbook : AppCompatActivity() {
         intent = Intent(this, ProfilPengguna::class.java)
         startActivity(intent)
     }
+
+    fun onButtonSaveTambahLogbook(view: View) {
+        intent = Intent(this, Logbook::class.java)
+        startActivity(intent)
+    }
 }
