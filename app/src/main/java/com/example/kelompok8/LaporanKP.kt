@@ -20,4 +20,9 @@ class LaporanKP : AppCompatActivity() {
         intent = Intent(this, ProfilPengguna::class.java)
         startActivity(intent)
     }
+
+    fun onButtonSubmitLaporanKP(view: View) {
+        intent = Intent(this, DetailKP::class.java)
+        startActivity(intent)
+    }
 }

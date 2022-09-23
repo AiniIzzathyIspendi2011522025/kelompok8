@@ -37,6 +37,7 @@
             android:layout_height="55dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/button1"
+            android:onClick="onButtonSaveEditLogbook"
             android:text="Save"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.987"
@@ -94,20 +95,24 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="48dp"
+        android:onClick="onButtonHomeEditLogbook"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.291"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:srcCompat="@drawable/home" />
+        app:srcCompat="@drawable/home"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="48dp"
+        android:onClick="onButtonProfilEditLogbook"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:srcCompat="@drawable/profill" />
+        app:srcCompat="@drawable/profill"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
