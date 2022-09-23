@@ -156,8 +156,10 @@
             android:layout_height="65dp"
             android:layout_marginTop="428dp"
             android:background="@drawable/button1"
+            android:onClick="onButtonSubmitBalasan"
             android:text="Submit"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -179,6 +181,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="48dp"
+        android:onClick="onButtonHome"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.291"
         app:layout_constraintStart_toStartOf="parent"
@@ -190,6 +193,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="48dp"
+        android:onClick="onButtonProfil"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
