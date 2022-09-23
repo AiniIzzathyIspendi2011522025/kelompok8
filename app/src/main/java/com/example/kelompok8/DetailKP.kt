@@ -35,4 +35,9 @@ class DetailKP : AppCompatActivity() {
         intent = Intent(this, ProfilPengguna::class.java)
         startActivity(intent)
     }
+
+    fun onButtonLogbook(view: View) {
+        intent = Intent(this, Logbook::class.java)
+        startActivity(intent)
+    }
 }

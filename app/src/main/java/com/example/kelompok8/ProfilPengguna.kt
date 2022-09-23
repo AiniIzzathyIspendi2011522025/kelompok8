@@ -25,4 +25,9 @@ class ProfilPengguna : AppCompatActivity() {
         intent = Intent(this, ProfilPengguna::class.java)
         startActivity(intent)
     }
+
+    fun onTextGantiPassword(view: View) {
+        intent = Intent(this, GantiPassword::class.java)
+        startActivity(intent)
+    }
 }

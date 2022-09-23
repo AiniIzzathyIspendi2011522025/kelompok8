@@ -57,6 +57,22 @@
         android:id="@+id/button8"
         android:layout_width="300dp"
         android:layout_height="95dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:onClick="onButtonLogbook"
+        android:text="Logbook"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="300dp"
+        android:layout_height="95dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/button1"
         android:fontFamily="@font/averia_gruesa_libre"

@@ -145,4 +145,16 @@
         app:layout_constraintTop_toTopOf="@+id/imageView3"
         app:srcCompat="@drawable/profill" />
 
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="onTextGantiPassword"
+        android:text="Ganti Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
