@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:srcCompat="@drawable/profill" />
+        app:srcCompat="@drawable/person" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout5"
@@ -114,14 +114,14 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home"
+        app:srcCompat="@drawable/home1"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
         android:onClick="onButtonHomeProfil"
         />
@@ -136,7 +136,7 @@
         app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profill"
+        app:srcCompat="@drawable/person"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView

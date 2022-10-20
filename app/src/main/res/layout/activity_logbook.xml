@@ -49,10 +49,10 @@
 
         <Button
             android:id="@+id/button11"
-            android:layout_width="90dp"
+            android:layout_width="115dp"
             android:layout_height="50dp"
             android:layout_marginTop="4dp"
-            android:background="@drawable/button1"
+            android:background="@drawable/button2"
             android:onClick="onButtonTambahLogbook"
             android:text="Tambah"
             app:layout_constraintEnd_toEndOf="parent"
@@ -75,16 +75,17 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:onClick="onButtonHomeLogbook"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        app:srcCompat="@drawable/home1"
+        tools:ignore="SpeakableTextPresentCheck, TouchTargetSizeCheck"
+        android:onClick="onButtonHomeLogbook"
+
         />
 
     <ImageView
@@ -92,13 +93,12 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
+        android:onClick="onButtonProfilLogbook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profill"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:onClick="onButtonProfilLogbook"
-        />
+        app:srcCompat="@drawable/person"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

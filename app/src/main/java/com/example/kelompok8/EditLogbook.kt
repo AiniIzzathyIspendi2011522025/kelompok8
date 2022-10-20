@@ -12,7 +12,7 @@ class EditLogbook : AppCompatActivity() {
     }
 
     fun onButtonSaveEditLogbook(view: View) {
-        intent = Intent(this, DetailLogbook::class.java)
+        intent = Intent(this, Logbook::class.java)
         startActivity(intent)
     }
     fun onButtonHomeEditLogbook(view: View) {

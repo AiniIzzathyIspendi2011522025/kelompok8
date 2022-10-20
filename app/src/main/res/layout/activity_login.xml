@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:elevation="10dp"
+    android:fadingEdgeLength="10dp"
     tools:context=".Login">
 
     <TextView
@@ -22,11 +24,15 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="234dp"
-        android:layout_height="56dp"
+        android:layout_width="296dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/button"
+        android:background="@drawable/button2"
         android:onClick="onButtonLoginClick"
+        android:shadowColor="#B0FFFFFF"
+        android:shadowDx="@dimen/material_emphasis_high_type"
+        android:shadowDy="@dimen/material_emphasis_high_type"
+        android:shadowRadius="@dimen/material_emphasis_high_type"
         android:text="Login"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,17 +53,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/logo" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="464dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/background" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputEditText"

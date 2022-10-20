@@ -27,6 +27,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="112dp"
         android:hint="NIM"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,6 +39,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:hint="NIM"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,6 +51,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:hint="NIM"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,6 +63,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:hint="NIM"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,6 +75,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="112dp"
         android:hint="Nama"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toEndOf="@+id/textInputEditText3"
@@ -82,6 +87,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:hint="Nama"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editText7"
         app:layout_constraintTop_toBottomOf="@+id/textInputEditText4" />
@@ -92,6 +98,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:hint="Nama"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editText8"
         app:layout_constraintTop_toBottomOf="@+id/editText10" />
@@ -102,6 +109,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:hint="Nama"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editText9"
         app:layout_constraintTop_toBottomOf="@+id/editText11" />
@@ -123,11 +131,12 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="245dp"
-        android:layout_height="65dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
         android:layout_marginTop="560dp"
         android:layout_marginBottom="32dp"
-        android:background="@drawable/button1"
+        android:background="@drawable/button2"
+        android:elevation="10dp"
         android:onClick="onButtonSubmitDataSeminar"
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -137,15 +146,15 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
         android:onClick="onButtonHome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home"
+        app:srcCompat="@drawable/home1"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
@@ -158,6 +167,6 @@
         app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profill"
+        app:srcCompat="@drawable/person"
         tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
