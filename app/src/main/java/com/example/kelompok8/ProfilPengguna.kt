@@ -30,4 +30,9 @@ class ProfilPengguna : AppCompatActivity() {
         intent = Intent(this, GantiPassword::class.java)
         startActivity(intent)
     }
+
+    fun onLogout(view: View){
+        intent = Intent(this, Login::class.java)
+        startActivity(intent)
+    }
 }
