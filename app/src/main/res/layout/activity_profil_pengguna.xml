@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView25">
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/username"
             android:layout_width="323dp"
             android:layout_height="40dp"
             android:layout_marginTop="68dp"
@@ -53,29 +53,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView19"
-            android:layout_width="323dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="268dp"
-            android:text="Tempat Tanggal Lahir"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.448"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="323dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="220dp"
-            android:text="No Handphone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.448"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/email"
             android:layout_width="323dp"
             android:layout_height="40dp"
             android:layout_marginTop="172dp"
@@ -86,7 +64,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/nim"
             android:layout_width="323dp"
             android:layout_height="40dp"
             android:layout_marginTop="120dp"
@@ -97,7 +75,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView26"
+            android:id="@+id/btnEditProfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="301dp"
@@ -113,7 +91,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/homeProfilPengguna"
         android:layout_width="62dp"
         android:layout_height="62dp"
         android:layout_marginTop="16dp"
@@ -127,7 +105,7 @@
         />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/profilProfilPengguna"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
@@ -140,7 +118,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/gantipassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -153,7 +131,7 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/textView30"
+        android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"

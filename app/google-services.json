@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "682409185569",
+    "project_id": "loki-a8",
+    "storage_bucket": "loki-a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682409185569:android:3e2ecb5f12cb252cdcee60",
+        "android_client_info": {
+          "package_name": "com.example.kelompok8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682409185569-hbbintbv5fkhibl1pl1uiu9pnvqpd3s5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVeV_Ow8oQ_qDTuhwmEUeuQ6F_V1J2XgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682409185569-hbbintbv5fkhibl1pl1uiu9pnvqpd3s5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

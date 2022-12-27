@@ -23,12 +23,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSignIn"
         android:layout_width="296dp"
         android:layout_height="50dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button2"
-        android:onClick="onButtonLoginClick"
         android:shadowColor="#B0FFFFFF"
         android:shadowDx="@dimen/material_emphasis_high_type"
         android:shadowDy="@dimen/material_emphasis_high_type"
@@ -39,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText2"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword"
         app:layout_constraintVertical_bias="0.808"
         tools:ignore="OnClick,UsingOnClickInXml" />
 
@@ -55,7 +54,7 @@
         app:srcCompat="@drawable/logo" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
+        android:id="@+id/editEmail"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
@@ -66,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText2"
+        android:id="@+id/editPassword"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -74,5 +73,5 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
 </androidx.constraintlayout.widget.ConstraintLayout>
