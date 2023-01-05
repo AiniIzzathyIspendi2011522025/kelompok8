@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/homeDetailKP"
         android:layout_width="62dp"
         android:layout_height="62dp"
         android:layout_marginTop="16dp"
@@ -36,7 +36,7 @@
         />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/profilDetailKP"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
@@ -55,7 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8">
+        app:layout_constraintTop_toBottomOf="@+id/homeDetailKP">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -90,7 +90,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
             <TextView
-                android:id="@+id/textView25"
+                android:id="@+id/emailhomescreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="150dp"
@@ -101,7 +101,7 @@
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+                app:layout_constraintTop_toBottomOf="@+id/nimhomescreen" />
 
             <TextView
                 android:id="@+id/textView22"
@@ -116,10 +116,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+                app:layout_constraintTop_toBottomOf="@+id/emailhomescreen" />
 
             <TextView
-                android:id="@+id/textView24"
+                android:id="@+id/nimhomescreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="150dp"
@@ -130,10 +130,10 @@
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+                app:layout_constraintTop_toBottomOf="@+id/namahomescreen" />
 
             <TextView
-                android:id="@+id/textView23"
+                android:id="@+id/namahomescreen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="150dp"
@@ -161,98 +161,153 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
             <Button
-                android:layout_width="130dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="38dp"
-                android:layout_marginTop="27dp"
-                android:layout_marginEnd="64dp"
-                android:background="@color/material_dynamic_neutral95"
-                android:backgroundTint="@color/material_dynamic_neutral40"
-                android:backgroundTintMode="screen"
-                android:bufferType="spannable"
-                android:elevation="10dp"
-                android:ellipsize="end"
-                android:fadingEdge="vertical"
-                android:fontFamily="sans-serif"
-                android:onClick="onButtonBalasanKP"
-                android:shadowColor="#786E6E"
-                android:text="Balasan Permohonan KP"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button5"
-                app:layout_constraintTop_toBottomOf="@+id/button4" />
-
-            <Button
-                android:id="@+id/button12"
+                android:id="@+id/btnLogbookKP"
                 android:layout_width="120dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="58dp"
-                android:layout_marginTop="472dp"
-                android:layout_marginEnd="232dp"
-                android:background="@color/material_dynamic_neutral95"
-                android:backgroundTint="@color/material_dynamic_neutral40"
-                android:backgroundTintMode="screen"
-                android:bufferType="spannable"
-                android:elevation="10dp"
-                android:ellipsize="end"
-                android:fadingEdge="vertical"
-                android:fontFamily="sans-serif"
+                android:layout_height="60dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="236dp"
+                android:layout_marginEnd="67dp"
+                android:layout_marginBottom="11dp"
                 android:onClick="onButtonLogbook"
-                android:shadowColor="#786E6E"
                 android:text="Logbook"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/btnLaporan"
+                app:layout_constraintEnd_toStartOf="@+id/btnBalasanKP"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/textView28"
+                app:layout_constraintVertical_bias="1.0" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btnBalasanKP"
                 android:layout_width="120dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="212dp"
-                android:layout_marginEnd="64dp"
-                android:background="@color/material_dynamic_neutral95"
-                android:backgroundTint="@color/material_dynamic_neutral40"
-                android:backgroundTintMode="screen"
-                android:bufferType="spannable"
-                android:elevation="10dp"
-                android:ellipsize="end"
-                android:fadingEdge="vertical"
-                android:fontFamily="sans-serif"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="238dp"
+                android:layout_marginBottom="9dp"
+                android:onClick="onButtonBalasanKP"
+                android:text="Balasan KP"
+                app:layout_constraintBottom_toTopOf="@+id/btnSeminar"
+                app:layout_constraintStart_toEndOf="@+id/btnLogbookKP"
+                app:layout_constraintTop_toBottomOf="@+id/textView28"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnLaporan"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="67dp"
+                android:layout_marginBottom="8dp"
                 android:onClick="onButtonLaporanSelesai"
-                android:shadowColor="#786E6E"
                 android:text="Laporan Selesai"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                android:visibility="visible"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnSeminar"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/btnSeminar"
                 android:layout_width="120dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="58dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="232dp"
-                android:background="@color/material_dynamic_neutral95"
-                android:backgroundTint="@color/material_dynamic_neutral40"
-                android:backgroundTintMode="screen"
-                android:bufferType="spannable"
-                android:elevation="10dp"
-                android:ellipsize="end"
-                android:fadingEdge="vertical"
-                android:fontFamily="sans-serif"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="10dp"
                 android:onClick="onButtonDataSeminar"
-                android:shadowColor="#786E6E"
-                android:text="Data Seminar KP"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button12" />
+                android:text="Data Seminar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnLaporan" />
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btnBalasanKP"-->
+            <!--                android:layout_width="130dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_marginStart="38dp"-->
+            <!--                android:layout_marginTop="27dp"-->
+            <!--                android:layout_marginEnd="64dp"-->
+            <!--                android:background="@color/material_dynamic_neutral95"-->
+            <!--                android:backgroundTint="@color/material_dynamic_neutral40"-->
+            <!--                android:backgroundTintMode="screen"-->
+            <!--                android:bufferType="spannable"-->
+            <!--                android:elevation="10dp"-->
+            <!--                android:ellipsize="end"-->
+            <!--                android:fadingEdge="vertical"-->
+            <!--                android:fontFamily="sans-serif"-->
+            <!--                android:onClick="onButtonBalasanKP"-->
+            <!--                android:shadowColor="#786E6E"-->
+            <!--                android:text="Balasan Permohonan KP"-->
+            <!--                android:textSize="14sp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toEndOf="@+id/btnSeminar"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/btnLaporan" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btnLogbook"-->
+            <!--                android:layout_width="120dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_marginStart="58dp"-->
+            <!--                android:layout_marginTop="472dp"-->
+            <!--                android:layout_marginEnd="232dp"-->
+            <!--                android:background="@color/material_dynamic_neutral95"-->
+            <!--                android:backgroundTint="@color/material_dynamic_neutral40"-->
+            <!--                android:backgroundTintMode="screen"-->
+            <!--                android:bufferType="spannable"-->
+            <!--                android:elevation="10dp"-->
+            <!--                android:ellipsize="end"-->
+            <!--                android:fadingEdge="vertical"-->
+            <!--                android:fontFamily="sans-serif"-->
+            <!--                android:onClick="onButtonLogbook"-->
+            <!--                android:shadowColor="#786E6E"-->
+            <!--                android:text="Logbook"-->
+            <!--                android:textSize="14sp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btnLaporan"-->
+            <!--                android:layout_width="120dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_marginTop="212dp"-->
+            <!--                android:layout_marginEnd="64dp"-->
+            <!--                android:background="@color/material_dynamic_neutral95"-->
+            <!--                android:backgroundTint="@color/material_dynamic_neutral40"-->
+            <!--                android:backgroundTintMode="screen"-->
+            <!--                android:bufferType="spannable"-->
+            <!--                android:elevation="10dp"-->
+            <!--                android:ellipsize="end"-->
+            <!--                android:fadingEdge="vertical"-->
+            <!--                android:fontFamily="sans-serif"-->
+            <!--                android:onClick="onButtonLaporanSelesai"-->
+            <!--                android:shadowColor="#786E6E"-->
+            <!--                android:text="Laporan Selesai"-->
+            <!--                android:textSize="14sp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:visibility="visible"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textView28" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btnSeminar"-->
+            <!--                android:layout_width="120dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_marginStart="58dp"-->
+            <!--                android:layout_marginTop="25dp"-->
+            <!--                android:layout_marginEnd="232dp"-->
+            <!--                android:background="@color/material_dynamic_neutral95"-->
+            <!--                android:backgroundTint="@color/material_dynamic_neutral40"-->
+            <!--                android:backgroundTintMode="screen"-->
+            <!--                android:bufferType="spannable"-->
+            <!--                android:elevation="10dp"-->
+            <!--                android:ellipsize="end"-->
+            <!--                android:fadingEdge="vertical"-->
+            <!--                android:fontFamily="sans-serif"-->
+            <!--                android:onClick="onButtonDataSeminar"-->
+            <!--                android:shadowColor="#786E6E"-->
+            <!--                android:text="Data Seminar KP"-->
+            <!--                android:textSize="14sp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/btnLogbook" />-->
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
