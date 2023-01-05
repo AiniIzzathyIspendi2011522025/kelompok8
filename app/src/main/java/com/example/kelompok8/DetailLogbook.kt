@@ -11,12 +11,7 @@ class DetailLogbook : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_logbook)
 
-        val headingTanggal : TextView = findViewById(R.id.textView11)
 
-        val bundle : Bundle? = intent.extras
-        val tgl = bundle!!.getString("tanggal")
-
-        headingTanggal.text = tgl
     }
 
 

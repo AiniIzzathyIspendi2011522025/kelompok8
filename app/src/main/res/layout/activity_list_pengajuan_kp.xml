@@ -48,7 +48,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/btnTambahKP"
             android:layout_width="115dp"
             android:layout_height="50dp"
             android:layout_marginTop="16dp"
@@ -73,7 +73,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/homePengajuanKP"
         android:layout_width="62dp"
         android:layout_height="62dp"
         android:layout_marginTop="16dp"
@@ -87,7 +87,7 @@
         />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/profilPengajuanKP"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
