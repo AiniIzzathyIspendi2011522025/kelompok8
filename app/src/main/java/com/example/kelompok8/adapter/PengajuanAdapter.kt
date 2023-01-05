@@ -3,36 +3,33 @@ package com.example.kelompok8.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.kelompok8.PojoModels.PengajuanResponse
 import com.example.kelompok8.R
 import com.example.kelompok8.models.Pengajuan
-import kotlinx.android.synthetic.main.activity_list_pengajuan_kp.view.*
-import kotlinx.android.synthetic.main.item_pengajuan.view.*
 
-class PengajuanAdapter(private val list: ArrayList<Pengajuan>): RecyclerView.Adapter<>(PengajuanAdapter) {
+class PengajuanAdapter(private val tempatList : ArrayList<Pengajuan>) :
 
-    inner class PengajuanViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        fun bind(pengajuanResponse: PengajuanResponse){
-        with(itemView){
-            val text ="id : $pengajuanResponse.id}\n" +
-                    "title : ${pengajuanResponse}\n" +
-                    "text : ${pengajuanResponse}"
-            tvText.text = text
-        }
-        }
+    RecyclerView.Adapter<PengajuanAdapter.pengajuanViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): pengajuanViewHolder {
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_pengajuan, parent, false)
+        return PengajuanAdapter.pengajuanViewHolder(itemView)
     }
 
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PengajuanViewHolder{
-            val view = LayoutInflater.from(parent.context).inflate(R.layout.item_pengajuan, parent, false)
-            return PengajuanViewHolder(view)
-        }
 
-        override fun getItemCount() : Int = list.size
+    override fun getItemCount(): Int {
+        return tempatList.size
+    }
 
-        override fun onBindViewHolder(holder: PengajuanViewHolder, position: Int) {
-            holder.bind(list[position])
-//
+    class pengajuanViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val tempat: TextView = itemView.findViewById(R.id.tempat)
 
-                    }
-                }
+
+    }
+
+    override fun onBindViewHolder(holder: pengajuanViewHolder, position: Int) {
+        val currentPosition = tempatList[position]
+        holder.tempat.setText(currentPosition.tempat)
+    }
+
+}
