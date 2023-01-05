@@ -6,9 +6,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.kelompok8.adapter.LogbookAdapter
 import com.example.kelompok8.adapter.PengajuanAdapter
-import com.example.kelompok8.models.Logbook
 import com.example.kelompok8.models.Pengajuan
 
 class ListPengajuanKP : AppCompatActivity() {

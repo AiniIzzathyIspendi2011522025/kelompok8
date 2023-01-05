@@ -21,6 +21,8 @@ class FormPengajuanKP : AppCompatActivity() {
         createNotificationChannel()
         intent = Intent(this, ListPengajuanKP::class.java)
         startActivity(intent)
+
+
     }
 
     fun onButtonProfil(view: View) {

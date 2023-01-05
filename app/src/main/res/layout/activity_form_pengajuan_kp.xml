@@ -33,7 +33,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="ExtraText">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="335dp"
@@ -137,6 +138,10 @@
             app:layout_constraintHorizontal_bias="0.117"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+        /** Called when the user touches the button */
+        fun sendMessage(view: View) {
+        // Do something in response to button click
+        }
 
         <Button
             android:id="@+id/button9"
