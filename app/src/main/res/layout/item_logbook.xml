@@ -14,13 +14,13 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/tanggal"
+            android:id="@+id/kegiatan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="39dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
-            android:text="10 Oktober 2022"
+            android:text="tidur"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
