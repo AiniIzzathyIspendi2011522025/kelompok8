@@ -39,7 +39,7 @@ interface KPApi {
     @GET("/api/my-internship/{id}/logbook/{id_logbook}")
     fun detail_logbook(@Header("Authorization")token: String,
                        @Path("id") id : Int,
-                       @Path("id_logbook") id_logbook: Int
+                       @Path("id_logbook") id_logbook: String?
     ):Call<DetailLogbookResponse>
 
     @GET("/api/my-internship/{id}/logbook")

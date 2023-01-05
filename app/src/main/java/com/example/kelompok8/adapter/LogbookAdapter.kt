@@ -7,45 +7,54 @@ import android.view.ViewParent
 import android.widget.AdapterView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.kelompok8.PojoModels.LogbooksItem
 import com.example.kelompok8.R
+import com.example.kelompok8.databinding.ItemLogbookBinding
 import com.example.kelompok8.models.Logbook
 import java.text.FieldPosition
 
-class LogbookAdapter (private var logbookList : ArrayList<Logbook>) :
-    RecyclerView.Adapter<LogbookAdapter.logbookViewHolder>() {
+class LogbookAdapter():
+    RecyclerView.Adapter<LogbookAdapter.LogbookViewHolder> () {
 
-    private lateinit var myListener : onItemClickListener
+    private lateinit var logbookListener: onClickListener
 
-    interface onItemClickListener {
+    var listLogbook: List<LogbooksItem> = ArrayList()
+
+    fun setlistLogbook(listLogbook: List<LogbooksItem>){
+        this.listLogbook = listLogbook
+        notifyDataSetChanged()
+    }
+
+    interface onClickListener {
         fun onItemClick(position: Int)
     }
 
-    fun setonItemClickListener(listener:onItemClickListener){
-        myListener = listener
+    fun setOnClickListener(listener: onClickListener) {
+        logbookListener = listener
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): logbookViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_logbook, parent, false)
-        return logbookViewHolder(itemView, myListener)
-    }
-
-    override fun onBindViewHolder(holder: logbookViewHolder, position: Int) {
-        val currentPosition = logbookList[position]
-        holder.tanggal.setText(currentPosition.tanggal)
-    }
-
-    override fun getItemCount(): Int {
-        return logbookList.size
-    }
-
-    class logbookViewHolder (itemView: View, listener: onItemClickListener) : RecyclerView.ViewHolder(itemView){
-        val tanggal : TextView = itemView.findViewById(R.id.tanggal)
-
+    inner class LogbookViewHolder(val itemBinding: ItemLogbookBinding, listener: onClickListener):RecyclerView.ViewHolder(itemBinding.root) {
         init {
             itemView.setOnClickListener {
                 listener.onItemClick(adapterPosition)
             }
         }
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LogbookViewHolder {
+        return  LogbookViewHolder(ItemLogbookBinding.inflate(LayoutInflater.from(parent.context), parent, false), logbookListener)
+    }
+
+    override fun getItemCount(): Int {
+        return listLogbook.size
+    }
+
+    override fun onBindViewHolder(holder: LogbookViewHolder, position: Int) {
+        val item: LogbooksItem = listLogbook[position]
+        holder.itemBinding.kegiatan.text = item.activities
+
+
+
     }
 
 }
