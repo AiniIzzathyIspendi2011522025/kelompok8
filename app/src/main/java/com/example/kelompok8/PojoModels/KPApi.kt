@@ -1,12 +1,9 @@
 package com.example.kelompok8.PojoModels
 
-import android.util.JsonToken
+import com.example.kelompok8.PojoModels.ListKP.ListKPResponse
+import com.example.kelompok8.PojoModels.TambahLogbook.TambahLogbookResponse
 import retrofit2.Call
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.GET
-import retrofit2.http.Header
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface KPApi {
     @FormUrlEncoded
@@ -33,6 +30,21 @@ interface KPApi {
         @Field("new_password") new_password:String,
         @Field("confirm_password") confirm_password:String
     ):Call<ChangePasswordResponse>
+
     @POST("/api/logout")
-    fun logout(@Header("Authorization") token: String):Call<LogoutResponse>
+    fun logout(@Header("Authorization") token: String
+    ):Call<LogoutResponse>
+
+    @GET("/api/my-internship")
+    fun listkpresponse(
+        @Header("Authorization") token: String, id: Int
+    ):Call<ListKPResponse>
+
+    @FormUrlEncoded
+    @POST("/api/my-internship/{id}/logbook")
+    fun tambahlogbookresponse(
+        @Header("Authorization") token: String,
+        @Path("id") id : Int,
+        @Field("activities") activities:String
+    ):Call<TambahLogbookResponse>
 }
