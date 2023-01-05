@@ -52,8 +52,7 @@ interface KPApi {
     fun tambah_logbook(
         @Header("Authorization") token: String,
         @Path("id") id : Int,
-        detail: String
-
+        @Field("activities") activities:String
     ):Call<TambahLogbookResponse>
 
 }

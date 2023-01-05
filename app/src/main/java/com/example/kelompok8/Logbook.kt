@@ -43,7 +43,7 @@ class Logbook : AppCompatActivity() {
         Log.d("list-debug", token.toString())
 
         val client: KPApi = config().getService()
-        val call: Call<ListLogbookResponse> = client.list_logbook(token = "Bearer " + token, id = 2)
+        val call: Call<ListLogbookResponse> = client.list_logbook(token = "Bearer " + token, id = 5)
 
         call.enqueue(object : Callback<ListLogbookResponse> {
             override fun onFailure(call: Call<ListLogbookResponse>, t: Throwable) {
