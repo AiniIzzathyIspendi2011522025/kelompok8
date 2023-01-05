@@ -1,12 +1,12 @@
 package com.example.kelompok8.PojoModels
 
-import android.util.JsonToken
 import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.POST
+import retrofit2.http.Path
 
 interface KPApi {
     @FormUrlEncoded
@@ -35,4 +35,25 @@ interface KPApi {
     ):Call<ChangePasswordResponse>
     @POST("/api/logout")
     fun logout(@Header("Authorization") token: String):Call<LogoutResponse>
+
+    @GET("/api/my-internship/{id}/logbook/{id_logbook}")
+    fun detail_logbook(@Header("Authorization")token: String,
+                       @Path("id") id : Int,
+                       @Path("id_logbook") id_logbook: Int
+    ):Call<DetailLogbookResponse>
+
+    @GET("/api/my-internship/{id}/logbook")
+    fun list_logbook(@Header("Authorization") token: String,
+                     @Path("id") id : Int,
+    ):Call<ListLogbookResponse>
+
+    @FormUrlEncoded
+    @POST("/api/my-internship/{id}/logbook")
+    fun tambah_logbook(
+        @Header("Authorization") token: String,
+        @Path("id") id : Int,
+        detail: String
+
+    ):Call<TambahLogbookResponse>
+
 }

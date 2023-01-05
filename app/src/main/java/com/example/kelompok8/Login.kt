@@ -42,6 +42,7 @@ class Login : AppCompatActivity() {
 //            // Get new FCM registration token
 //            val token = task.result
 //            // Log and toast
+
 //            Log.d(TAG, token)
 //            //Toast.makeText(baseContext, token, Toast.LENGTH_SHORT).show()
 //        })
