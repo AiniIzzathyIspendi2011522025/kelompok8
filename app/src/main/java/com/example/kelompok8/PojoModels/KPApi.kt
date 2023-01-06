@@ -13,7 +13,6 @@ interface KPApi {
     @GET("/api/me")
     fun profile(@Header("Authorization") token:String):Call<User>
 
-
     @FormUrlEncoded
     @POST("/api/me/update")
     fun updateProfile(
@@ -37,7 +36,7 @@ interface KPApi {
 
     @GET("/api/my-internship")
     fun listkpresponse(
-        @Header("Authorization") token: String, id: Int
+        @Header("Authorization") token: String
     ):Call<ListKPResponse>
 
     @FormUrlEncoded

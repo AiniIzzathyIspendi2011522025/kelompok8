@@ -40,7 +40,7 @@ class Homescreen : AppCompatActivity() {
         Log.d("list-debug", token.toString())
 
         val client: KPApi = config().getService()
-        val call: Call<ListKPResponse> = client.listkpresponse(token = "Bearer " + token, id = 2)
+        val call: Call<ListKPResponse> = client.listkpresponse(token = "Bearer " + token)
 
         call.enqueue(object : Callback<ListKPResponse> {
             override fun onFailure(call: Call<ListKPResponse>, t: Throwable) {
